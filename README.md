@@ -1,2 +1,2 @@
-# project
-my project
+# My Project
+contents of my small project
