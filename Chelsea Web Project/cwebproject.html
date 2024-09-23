@@ -1,0 +1,576 @@
+<html style="scroll-behavior: smooth;"></html>
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/id/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png">
+</head>
+<style>
+        @font-face {
+        font-family: Chelsea Basis B;
+        src: url(ChelseaBasis-Bold.ttf);
+    }
+    @font-face {
+        font-family: Chelsea Basis R;
+        src: url(ChelseaBasis-Regular.ttf);
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    body{
+        background-color: #ffffff;
+        overflow-x: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body html{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+    }
+    .bodyweb{
+        width: 100%;
+        margin: 0;
+    }
+    .logo{
+        width: 75px;
+        height: 75px;
+        margin-left: 10px;
+    }
+    header{
+        align-items: center;
+        display: flex;
+        background-color: rgb(3, 70, 148);
+        height: 100px;
+        margin-top: -8px;
+        margin-left: -8px;
+        margin-right: -8px;
+        top: 0;
+        position: sticky;
+        z-index: 1;
+        padding: 5px;
+        box-shadow: 0 3px 10px black; 
+
+    }
+    .judul{
+        margin-left: 10px;
+        font-size: 50px;
+        text-decoration: none;
+        color: white;
+        font-family: Chelsea Basis B;
+        display: block;
+        position: relative;
+
+    }
+    a{
+        text-decoration: none;
+    }
+    nav{
+        margin-left: auto;
+        margin-right: 120px;
+        position: relative;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        position: relative;
+        padding: 10px;
+    }
+    nav .ul1 .li1 .a1{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-family: Chelsea Basis R;
+        -webkit-transition: font-size .5s ease;
+        -moz-transition: font-size .5s ease;
+        -o-transition: font-size .5s ease;
+        transition: font-size .5s ease;
+    }
+    nav .ul1 .li1 .a1:hover{
+        font-size: 1.5em;
+    }
+    nav .ul1 .li1 ul{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgb(0, 49, 105);
+        padding: 0;
+        min-width: 200px;
+        z-index: 1;
+        list-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-5px);
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    }
+    nav .ul1 .li1:hover ul{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    nav .ul1 .li1 ul li {
+        width: 100%;
+    }
+    nav .ul1 .li1 ul li a{
+        padding: 10px;
+        color: white;
+        font-family: Chelsea basis r;
+        opacity: 0;
+        transform: translateY(5px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    nav .ul1 .li1 ul li a{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    nav .ul1 .li1 ul li a:hover {
+        background-color: rgb(0, 40, 85);
+        width: max-content;
+        font-size: inherit;
+    }
+    nav .ul1 .li1 ul li a::before{
+        content: none;
+    }
+    nav .ul1 .li1 .a1::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.25s ease-out;
+        display: flex;
+        pointer-events: none;
+    }
+    nav .ul1 .li1:hover .a1 {
+        font-size: 1.5em;
+    }
+    nav .ul1 .li1:hover .a1::before{
+        width: 100% ;
+    }
+    nav .ul1 .li1 .a1:hover::before {
+        width: 100%;    
+    }
+    .lastestnews{
+        background-image: url(https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/The%205th%20Stand%20app%20editorial/GettyImages-2167287516.jpg);
+        background-size: cover;
+        background-position: center 15%;
+        background-repeat: no-repeat;
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-top: -19px;
+        height: 879px;
+        box-shadow: 5px -150px 1000px 50px black inset;
+    }
+    .bgltt1{
+        background-color: rgba(0, 0, 0, 0.555);
+        height: 0.5px;
+    }
+    .bgltisi{
+        text-align: center;
+    }
+    .ltisijd{
+        font-family: Chelsea basis r;
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .ltisijd:hover{
+        text-decoration: underline ; 
+
+    }
+    .ltisiisi{
+        font-family: chelsea basis r;
+        text-align: center;
+        margin-left: -360px;
+    }
+    .featured{ 
+        font-family: chelsea basis r;
+        text-align: center;
+        margin-top: 700px;
+        margin-left: 576px;
+        margin-right: auto;
+        width: 80px;
+        position: static;
+        text-decoration: underline;
+    }
+    .grf{
+        position: static;
+        background-color: aliceblue;
+        width: 100%; 
+        height: 2px; 
+        margin-top: -15px; 
+    }
+    .lstsm{
+        height: 75%;
+        width: auto;
+        background-color: whitesmoke;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 15%;
+        height: 110%;
+        margin-top: -16px;
+        margin-left: -8px;
+        margin-right: -8px;
+        display: flex;
+    }
+    .glst{
+        position: static;
+        background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(0, 40, 85));
+        width: 88.3%; 
+        height: 2px; 
+        margin-top: -30px; 
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+    .isim1{
+        background-image: url(https://pbs.twimg.com/media/GV1e2AnXkAAjCbc?format=jpg&name=4096x4096);
+        background-position: left -2.5vw bottom 0 ;
+        width: 750px;
+        height: 600px;   
+        background-size: cover;
+        box-shadow: 5px -100px 1000px 10px black inset;
+        margin: auto;
+        margin-left: 100px;
+    }
+    .isim2{
+        background-image: url(https://img.chelseafc.com/image/upload/f_auto,c_fill,g_auto,w_1200,ar_16:9,q_90/site-sections/stamford-bridge/stadium-tours/Website%20update/1962997362.jpg);
+        background-position: center 75%;
+        width: 750px;
+        height: 600px;   
+        background-size: cover;
+        box-shadow: 5px -100px 1000px 1px black inset;
+        margin: auto;
+        margin-left: 100px;
+    }
+    .lstsv{
+        height: 100%;
+        width: auto;
+        background-image: url(https://img.chelseafc.com/image/upload/f_auto,h_650,c_fill,ar_16:9,w_500,q_90/editorial/news/2024/07/25/Away_Kit_24-25_PREREG_Web_Hero_2880x1620.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -16px;
+        margin-left: -8px;
+        margin-right: -8px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
+    .isiv{
+        margin-left: 100px;
+        padding-top: 150px;
+        
+    }
+    .giv{
+        position: static;
+        background-color: aliceblue;
+        width: 95%; 
+        height: 2px; 
+        margin-top: -15px; 
+    }
+    .horizontal-scroll{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .vidi{
+        display: flex;
+        width: max-content;
+        gap: 0.5rem;
+    }
+    .vitem{
+        margin-top: 25px;
+        margin-left: -1px;
+        position: relative;
+        transition: transform 0.2s;
+    }    
+    .vitem:hover{
+        transform: scale(1.1000);
+        transition: transform 0.2s;
+    }
+    img{
+        position: relative;
+    }
+    .isim1tgl{
+        font-family: chelsea basis r;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .isim1st{
+        font-family: chelsea basis r;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: -30px;
+    }
+    .isim1lig{
+        font-family: chelsea basis r;
+        color: white;
+        font-size: 0.7rem;
+        text-align: center;
+        margin-top: -15px;
+    }
+    .isim1lvl{
+        display: flex;
+        gap: 50px;
+        overflow: auto;
+        margin-top: 100px;
+    }
+    .isim1logo1{
+        height: 150px;
+        width:  125px;
+        margin-left: 100px;
+        
+    }
+    .isim1logo2{
+        height: 150px;
+        width:  150px;  
+        margin-right: 100px;
+    }
+    .isim1k{
+        background-color: rgb(255, 255, 255);
+        height: 50px;
+        width:  150px;
+        margin-top: auto;
+        margin-bottom: auto;
+        overflow-wrap: break-word;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(0, 0, 0);
+    }
+    .isim1ks{
+        font-family: chelsea basis r;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: -0px;
+    }
+    .isim1nt{
+        display: flex;
+        justify-content: center;
+    }
+    .isim1t1{
+        color: white;
+        margin-left: 110px;
+        font-family: chelsea basis r;
+    }
+    .isim1t2{
+        color: white;
+        margin: auto;
+        margin-left: 336px;
+        font-family: chelsea basis r;
+    }
+    .isim1md{
+        background-color: #001489;
+        height: 75px;
+        width: 550px;
+        margin: auto;
+        margin-top: 70px;
+        align-content: center;
+        margin-left: 100px;
+        pointer-events: auto;
+    }
+    .isim1mc{
+        color: white;
+        font-family: chelsea basis r;
+        text-align: center;
+    }
+    .isim2logo1{
+        height: 150px;
+        width:  125px;
+        margin-left: 100px;
+        
+    }
+    .isim2logo2{
+        height: 150px;
+        width:  150px;  
+        margin-right: 100px;
+    }
+    .isim2t1{
+        color: white;
+        margin-left: 124px;
+        font-family: chelsea basis r;
+    }
+    .isim2t2{
+        color: white;
+        margin: auto;
+        margin-left: 349px;
+        font-family: chelsea basis r;
+    }
+    .linkmc1{
+        display: inline-block;
+        pointer-events: none;
+    }
+    .isim1md:hover{
+        background: #ffffff;
+        transition:  all 0.3s;
+        transform: scale(1,1.1);
+    }
+    .isim1md:hover .isim1mc{
+        color: #001489;
+        transition:  all 0.3s;
+        font-weight: bold;
+        transform: scale(1, 0.90909); 
+
+    }
+    footer{
+        height: 100px;
+        background-color: white;
+        margin-bottom: -16px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .product{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .sponsor1img{
+        width: 150px;
+    }
+</style>
+<body>
+    <div class="bodyweb">
+    <header>
+        <a href="#" class="logochelsea">
+        <img class="logo" href="#" src="https://upload.wikimedia.org/wikipedia/id/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png">
+        </a>
+        <a class="judul" href="#">CHELSEA</a>
+        <nav>
+            <ul class="ul1">
+                <li class="li1"><a href="" class="a1">NEWS</a></li>
+                <li class="li1"><a href="" class="a1">WATCH</a></li>
+                <li class="li1"><a href="" class="a1">SHOP</a></li>
+                <li class="li1"><a href="" class="a1">PLAYER</a></li>
+                <li class="li1"><a href="" class="a1">TICKETS</a></li>
+                <li class="li1"><a href="" class="a1">MORE</a>
+                <ul>
+                    <li><a href="">About The Club</a></li>
+                    <li><a href="">Supporter Relations</a></li>
+                    <li><a href="">Our History</a></li>
+                    <li><a href="">Stamford Bridge</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">Fans</a></li>
+                </ul></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="lastestnews">
+        <div class="bgltt1"> 
+        </div>
+        <div class="featured">
+            <p style="color: white;">Featured</p>
+        <div class="grf">
+        </div> 
+        </div>
+        <div class="bgltisi">
+        <a href="" style="color: white;" class="ltisijd">"Chelsea defense is fucking awful and disgrace"</a>
+        <p style="color: white; margin-top: -5px;" class="ltisiisi">According to a fan on social media and the internet</p>
+        </div>
+    </div>
+    <div class="lstsm">
+        <br>
+        <div>
+        <p style="margin-top: 150Px; font-family: chelsea basis r ; margin-left: 100px; font-size: 2rem;">Lastest Match</p>
+        <div class="glst"></div>
+        <div class="isim1">
+            <div>
+            <p class="isim1tgl"><b>SUN 15 SEP</b></p>
+            <p class="isim1st"><b>VITALITY STADIUM</b></p>
+            <p class="isim1lig">PREMIER LEAGUE</p>
+            <div class="isim1lvl">
+                <img class="isim1logo1" src="https://upload.wikimedia.org/wikipedia/id/thumb/e/e5/AFC_Bournemouth_%282013%29.svg/800px-AFC_Bournemouth_%282013%29.svg.png" alt="">
+                <div class="isim1k"><p class="isim1ks">0  -  1</p></div>
+                <img class="isim1logo2" src="https://upload.wikimedia.org/wikipedia/id/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png">
+            </div>
+            <div class="isim1nt">
+                <p class="isim1t1">Bournemouth</p>
+                <p class="isim1t2">Chelsea</p>
+            </div>
+            <a href="" class="linkmc1"><div class="isim1md"><p class="isim1mc">MATCH CENTRE</p></div></a>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div style="margin-left: 90px;">
+            <p style="margin-top: 150px; font-family: chelsea basis r ; margin-left: 100px; font-size: 2rem;">Incoming Match</p>
+            <div class="glst"></div>
+            <div class="isim2">
+                <div>
+                    <p class="isim1tgl"><b>SUN 21 SEP</b></p>
+                    <p class="isim1st"><b>LONDON STADIUM</b></p>
+                    <p class="isim1lig">PREMIER LEAGUE</p>
+                    <div class="isim1lvl">
+                        <img class="isim2logo1" src="https://upload.wikimedia.org/wikipedia/id/thumb/c/c2/West_Ham_United_FC_logo.svg/800px-West_Ham_United_FC_logo.svg.png">
+                        <div class="isim1k"><p class="isim1ks">18.30</p></div>
+                        <img class="isim2logo2" src="https://upload.wikimedia.org/wikipedia/id/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png">
+                    </div>
+                    <div class="isim1nt">
+                        <p class="isim2t1">West Ham</p>
+                        <p class="isim2t2">Chelsea</p>
+                    </div>
+                    <a href="" class="linkmc1"><div class="isim1md"><p class="isim1mc">MATCH CENTRE</p></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="lstsv">  
+        <div class="isiv">
+        <p style="color: white; font-family: chelsea basis r ;">LASTEST VIDEO</p>
+        <div class="giv"></div>
+        <div class="vid">
+            <div class="horizontal-scroll">
+            <div class="vidi">
+                <figure class="vitem">  
+                    <a href="https://www.youtube.com/watch?v=gx-4tSC0VR4&pp=ygUHY2hlbHNlYQ%3D%3D">
+                    <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/09/01/2MINS_Chelsea_1-1_Crystal_Palace_EPL_2024-25.jpg">
+                    </a>
+                </figure>
+                <figure class="vitem">
+                    <a href="https://www.youtube.com/watch?v=q_lLtICjoo8">
+                    <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/08/31/240831_Sancho_BTS_Int_V2_16X9.jpg">
+                    </a>
+                </figure>
+                <figure class="vitem">
+                    <a href="https://www.youtube.com/watch?v=lARz3zix0UU">
+                    <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/08/29/HIGHLIGHTS.jpg">
+                    </a>
+                </figure>
+                <figure class="vitem">
+                    <a href="https://www.youtube.com/watch?v=2pLmQhUf95Y">
+                    <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/08/30/training_thumbnail.jpg">
+                    </a>
+                </figure>
+                <figure class="vitem">
+                    <a href="https://www.youtube.com/watch?v=fKsFSWPOWRA">
+                    <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/08/25/2MINS_Wolves_2-6_Chelsea_EPL_2024-25.jpg">
+                    </a>
+                </figure>
+            </div>
+            </div>
+        </div> 
+        </div>
+    </div>
+    <footer>
+        <div class="product">
+        <a href="https://www.nike.com/gb/"><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/nike_footer_600x200.png"  class="sponsor1img"></a>
+        <a href="https://bingx.com/en-us/"><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/bingx_footer_600x200.png" class="sponsor1img"></a>
+        <a href="https://feverup.com/en"><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/fever_footer_600x200.png"   class="sponsor1img"></a>
+        </div>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
