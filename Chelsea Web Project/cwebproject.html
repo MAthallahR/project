@@ -1,4 +1,4 @@
-<html style="scroll-behavior: smooth;"></html>
+<html style="scroll-behavior: smooth;">
 <head>
     <title>Homepage</title>
     <link rel="stylesheet" href="main.css">
@@ -203,7 +203,7 @@
         margin-left: 576px;
         margin-right: auto;
         width: 80px;
-        position: static;
+        position: relative;
         text-decoration: underline;
     }
     .grf{
@@ -225,6 +225,7 @@
         margin-left: -8px;
         margin-right: -8px;
         display: flex;
+        position: relative;
     }
     .glst{
         position: static;
@@ -258,7 +259,7 @@
     .lstsv{
         height: 100%;
         width: auto;
-        background-image: url(https://img.chelseafc.com/image/upload/f_auto,h_650,c_fill,ar_16:9,w_500,q_90/editorial/news/2024/07/25/Away_Kit_24-25_PREREG_Web_Hero_2880x1620.jpg);
+        background-image: url(  https://img.chelseafc.com/image/upload/f_auto,h_650,c_fill,ar_16:9,w_500,q_90/editorial/news/2024/07/25/Away_Kit_24-25_PREREG_Web_Hero_2880x1620.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: -16px;
@@ -267,8 +268,8 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     }
     .isiv{
-        margin-left: 100px;
         padding-top: 150px;
+        padding-left: 100px;
         
     }
     .giv{
@@ -277,6 +278,7 @@
         width: 95%; 
         height: 2px; 
         margin-top: -15px; 
+        padding-left: 100px;
     }
     .horizontal-scroll{
         width: 100%;
@@ -285,17 +287,22 @@
     .vidi{
         display: flex;
         width: max-content;
-        gap: 0.5rem;
     }
     .vitem{
         margin-top: 25px;
-        margin-left: -1px;
+        margin-right: -0.9px;
         position: relative;
         transition: transform 0.2s;
     }    
     .vitem:hover{
-        transform: scale(1.1000);
-        transition: transform 0.2s;
+        transform: scale(1.1);
+    }
+    .vid1{
+        margin-left: -10px;
+    }
+    .isivitem{
+        color: #ffffff;
+        font-family: chelsea basis r;
     }
     img{
         position: relative;
@@ -434,9 +441,65 @@
         margin-top: 50px;
         display: flex;
         justify-content: center;
+        gap: 10px;
     }
     .sponsor1img{
-        width: 150px;
+        width: 120px;
+    }
+    .sponsors{
+        height: 200px;
+        background-color: rgb(226, 226, 226);
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .isp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        gap: 10px;
+    }
+    .ulsp{
+        list-style: none;
+        padding-left:  400px;
+        padding-right: 400px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;      
+        justify-content: center;
+    }
+    .lsp{
+        margin: 10px;
+    }
+    .spimg{ 
+        width: 125px;
+        height: auto;
+        max-width: 200px; 
+        border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+        li {
+          width: 50%; /* adjust the width to your liking */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        li {
+          width: 100%; /* adjust the width to your liking */
+        }
+    }
+    .footerch{
+        height: 350px;
+        background-color: #001489;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .footercr{
+        height: 100px;
+        background-color: #00093b;
+        margin-bottom: -16px;
+        margin-left: -8px;
+        margin-right: -8px;
     }
 </style>
 <body>
@@ -481,7 +544,7 @@
     <div class="lstsm">
         <br>
         <div>
-        <p style="margin-top: 150Px; font-family: chelsea basis r ; margin-left: 100px; font-size: 2rem;">Lastest Match</p>
+        <p style="margin-top: 150Px; font-family: chelsea basis b ; margin-left: 100px; font-size: 2rem;">Lastest Match</p>
         <div class="glst"></div>
         <div class="isim1">
             <div>
@@ -503,7 +566,7 @@
         </div>
         <br>
         <div style="margin-left: 90px;">
-            <p style="margin-top: 150px; font-family: chelsea basis r ; margin-left: 100px; font-size: 2rem;">Incoming Match</p>
+            <p style="margin-top: 150px; font-family: chelsea basis b ; margin-left: 100px; font-size: 2rem;">Incoming Match</p>
             <div class="glst"></div>
             <div class="isim2">
                 <div>
@@ -528,35 +591,40 @@
     </div>
     <div class="lstsv">  
         <div class="isiv">
-        <p style="color: white; font-family: chelsea basis r ;">LASTEST VIDEO</p>
+        <p style="color: white; font-family: chelsea basis b ;font-size: 2rem;">LASTEST VIDEO</p>
         <div class="giv"></div>
         <div class="vid">
             <div class="horizontal-scroll">
             <div class="vidi">
                 <figure class="vitem">  
                     <a href="https://www.youtube.com/watch?v=gx-4tSC0VR4&pp=ygUHY2hlbHNlYQ%3D%3D">
-                    <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/09/01/2MINS_Chelsea_1-1_Crystal_Palace_EPL_2024-25.jpg">
+                    <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/09/01/2MINS_Chelsea_1-1_Crystal_Palace_EPL_2024-25.jpg" class="vid1">>
                     </a>
+                    <p class="isivitem">Crystal Palace Highlight</p>
                 </figure>
                 <figure class="vitem">
                     <a href="https://www.youtube.com/watch?v=q_lLtICjoo8">
                     <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/08/31/240831_Sancho_BTS_Int_V2_16X9.jpg">
                     </a>
+                    <p class="isivitem">Jadon Sancho For Chelsea!</p>
                 </figure>
                 <figure class="vitem">
                     <a href="https://www.youtube.com/watch?v=lARz3zix0UU">
                     <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/08/29/HIGHLIGHTS.jpg">
                     </a>
+                    <p class="isivitem">Jadon Sancho For Chelsea!</p>
                 </figure>
                 <figure class="vitem">
                     <a href="https://www.youtube.com/watch?v=2pLmQhUf95Y">
                     <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/08/30/training_thumbnail.jpg">
                     </a>
+                    <p class="isivitem">Jadon Sancho For Chelsea!</p>
                 </figure>
                 <figure class="vitem">
                     <a href="https://www.youtube.com/watch?v=fKsFSWPOWRA">
                     <img src="https://img.chelseafc.com/image/upload/f_auto,c_fill,ar_16:9,w_600,q_90/video/2024/08/25/2MINS_Wolves_2-6_Chelsea_EPL_2024-25.jpg">
                     </a>
+                    <p class="isivitem">Jadon Sancho For Chelsea!</p>
                 </figure>
             </div>
             </div>
@@ -570,6 +638,32 @@
         <a href="https://feverup.com/en"><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/fever_footer_600x200.png"   class="sponsor1img"></a>
         </div>
     </footer>
+    <div class="sponsors">
+        <div class="isp">
+            <ul class="ulsp">
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/editorial/partnerships/Ascott/Ascott_Logo_wo_Crest_Blue.png"              class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/cadbury_footer_600x200.png"                   class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/easports_footer_600x200.png"                  class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/header-logos/infinite-athlete_header_500x167.png"          class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/linglone_footer_600x200.png"                  class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/matchworn_footer_600x200.png"                 class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/msc_footer_600x200.png"                       class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/predator_footer_600x200.png"                  class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/singha_footer_600x200.png"                    class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/Partner%20Logos%202022/Low%20Resolution%20(Small%20File%20Size)/Sure.png" class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/three_footer_600x200.png"                     class="spimg"></a></li>
+                <li class="lsp"><a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/tmgm_footer_600x200.png"                      class="spimg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerch">
+        <div>
+            
+        </div>
+    </div>
+    <div class="footercr">
+
+    </div>
     </div>
     </div>
 </body>
