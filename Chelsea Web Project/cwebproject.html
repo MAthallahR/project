@@ -234,7 +234,7 @@
         height: 2px; 
         margin-top: -30px; 
         margin-bottom: 10px;
-        margin-left: 100px;
+        margin-left: 125px;
     }
     .isim1{
         background-image: url(https://pbs.twimg.com/media/GV1e2AnXkAAjCbc?format=jpg&name=4096x4096);
@@ -244,7 +244,7 @@
         background-size: cover;
         box-shadow: 5px -100px 1000px 10px black inset;
         margin: auto;
-        margin-left: 100px;
+        margin-left: 125px;
     }
     .isim2{
         background-image: url(https://img.chelseafc.com/image/upload/f_auto,c_fill,g_auto,w_1200,ar_16:9,q_90/site-sections/stamford-bridge/stadium-tours/Website%20update/1962997362.jpg);
@@ -448,9 +448,10 @@
     }
     .sponsors{
         height: 200px;
-        background-color: rgb(226, 226, 226);
+        background-color: rgb(241, 241, 241);
         margin-left: -8px;
         margin-right: -8px;
+        overflow: auto;
     }
     .isp{
         display: flex;
@@ -493,6 +494,10 @@
         background-color: #001489;
         margin-left: -8px;
         margin-right: -8px;
+        position: relative;
+        padding-left: 200px;
+        padding-right: 200px;
+        overflow: auto;
     }
     .footercr{
         height: 100px;
@@ -562,6 +567,25 @@
     .tiktod:hover{
         fill: rgb(255, 166, 0);
     }
+    .footblock{
+        display: flexbox;
+
+    }
+    .spap{
+        list-style-type: none;
+        text-align: center;
+        margin-top: -140px;
+        padding-left: 600px;
+    }
+    .appstor{
+        width: auto;
+        height: 35px;
+        
+    }
+    .pleystor{
+        width: auto;
+        height: 35px;
+    }   
 </style>
 <body>
     <div class="bodyweb">
@@ -605,10 +629,9 @@
     <div class="lstsm">
         <br>
         <div>
-        <p style="margin-top: 150Px; font-family: chelsea basis b ; margin-left: 100px; font-size: 2rem;">Lastest Match</p>
+        <p style="margin-top: 150Px; font-family: chelsea basis b ; margin-left: 125px; font-size: 2rem;">Lastest Match</p>
         <div class="glst"></div>
         <div class="isim1">
-            <div>
             <p class="isim1tgl"><b>SUN 15 SEP</b></p>
             <p class="isim1st"><b>VITALITY STADIUM</b></p>
             <p class="isim1lig">PREMIER LEAGUE</p>
@@ -624,13 +647,11 @@
             <a href="" class="linkmc1"><div class="isim1md"><p class="isim1mc">MATCH CENTRE</p></div></a>
             </div>
         </div>
-        </div>
         <br>
         <div style="margin-left: 90px;">
             <p style="margin-top: 150px; font-family: chelsea basis b ; margin-left: 100px; font-size: 2rem;">Incoming Match</p>
             <div class="glst"></div>
             <div class="isim2">
-                <div>
                     <p class="isim1tgl"><b>SUN 21 SEP</b></p>
                     <p class="isim1st"><b>LONDON STADIUM</b></p>
                     <p class="isim1lig">PREMIER LEAGUE</p>
@@ -645,7 +666,6 @@
                     </div>
                     <a href="" class="linkmc1"><div class="isim1md"><p class="isim1mc">MATCH CENTRE</p></div></a>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -718,9 +738,9 @@
         </div>
     </div>
     <div class="footerch">
+        <a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png" style="width: 80px; height: 80px; margin-top: 30px; padding-left: 130px;"></a>
         <div>
-            a href=""><img src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png" style="width: 80px; height: 80px; margin-top: 30px; margin-left: 100px;"></a>
-        <div>
+            <ul class="footblock">
             <ul class="cfcad">
                 <li style="font-family: chelsea basis b;">Chelsea Football Club</li>
                 <li>Stamfod Bridge</li>
@@ -743,7 +763,18 @@
                 <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="60" viewBox="0 0 50 50" style="fill:#FFFFFF;" class="tiktod">
                         <path class="tiktod" d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"></path>
                     </svg></a></li>
+                <div class="spap">
+                    <p style="color: white; font-family: chelsea basis b; text-align: right;">Get the app here</p>
+                    <div class="gapp">
+                        <a href="https://chelseafc.onelink.me/1WUW/id1x1kng"><img class="appstor" src="https://img.chelseafc.com/image/upload/f_auto,c_fill,dpr_2.0,w_120,h_40,fl_lossy,q_100/site-assets/app-stores/Download_On_The_App_Store.png" alt=""></a>
+                        <a href="https://chelseafc.onelink.me/1WUW/03ey3mli"><img class="pleystor" src="https://img.chelseafc.com/image/upload/f_auto,c_fill,dpr_2.0,w_120,h_40,fl_lossy,q_100/site-assets/app-stores/Get_It_On_Google_Play.png" alt=""></a>
+                    </div>
+                    </div>
             </ul>   
+            </ul>
+        </div>
+        <div>
+
         </div>
     </div>
     <div class="footercr">
