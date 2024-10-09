@@ -45,8 +45,6 @@
         background-color: rgb(3, 70, 148);
         height: 100px;
         margin-top: -8px;
-        margin-left: -8px;
-        margin-right: -8px;
         top: 0;
         position: sticky;
         z-index: 1;
@@ -94,6 +92,18 @@
     }
     nav .ul1 .li1 .a1:hover{
         font-size: 1.5em;
+        animation: glow 1.5s infinite;
+    }
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 2);
+        }
+        50% {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 5);
+        }
+        100% {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 2);
+        }
     }
     nav .ul1 .li1 ul{
         display: block;
@@ -164,8 +174,6 @@
         background-size: cover;
         background-position: center 15%;
         background-repeat: no-repeat;
-        margin-left: -8px;
-        margin-right: -8px;
         margin-top: -19px;
         height: 879px;
         box-shadow: 5px -150px 1000px 50px black inset;
